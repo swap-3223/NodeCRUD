@@ -17,7 +17,7 @@ router.get('/:bg',async(req,res)=>{
      console.log(rslt)
 })
 
-router.get('/',async(req,res)=>{
+router.get('/studs',async(req,res)=>{
     const data = await student.find();
     res.send(data)
     console.log(data)
